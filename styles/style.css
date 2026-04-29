@@ -6,7 +6,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar img {
-    width: 30px;
+    width: 100px;
+    font-weight: 900;
 }
 
 .carousel-inner img {
@@ -37,7 +38,7 @@ div.card-body, .card-title, .card-text {
 
 /* Hero Section */
 .hero-section {
-    background: url(../images/orangecat.webp);
+    background: url(../images/bacground.webp);
     background-size: cover;
     background-position: 50% 50%;
     height: 100vh;
@@ -50,7 +51,9 @@ div.card-body, .card-title, .card-text {
 
 
 .hero-section h1 {
-    font-weight: 100;
+    font-weight: 900;
+    font-size: 9rem;
+    
 }
 
 .hero-section .lead {
@@ -58,7 +61,7 @@ div.card-body, .card-title, .card-text {
 }
 
 .work-card img {
-    height: 300px;
+    height: 500px;
     object-fit: cover;
     border-radius: 0;
 }
