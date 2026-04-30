@@ -1,25 +1,28 @@
 nav a {
   display: block;
-  background-color: #f2f2f2;
+  background-color: rgb(212, 40, 109);
   color: #3a0010;
   text-decoration: none;
   font-size: 2rem;
-  padding: 20px 40px;
-  border-radius: 80px;        /* ← this makes the pill shape */
-  border: 2px solid #0f0f0f;
+  padding: 20px 20px;
+  border-radius: 50px;        /* ← this makes the pill shape */
+  border: 2px solid #a61f87;
   transition: background 0.2s, transform 0.15s;
   text-align: center;
 }
 
 
 nav a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(212, 40, 109);
   transform: translateX(4px); /* ← subtle slide on hover */
+  padding: 20px 40px;
+
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--text-color);
+    color:rgb(0, 0, 0);
+    font-family:  "Roboto";
 }
 
 .navbar img {
@@ -30,6 +33,27 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    
+}
+
+.card-text p {
+  margin-bottom: 16px;      /* ← space between paragraphs */
+  line-height: 1.8;         /* ← makes text easier to read */
+  font-size: 1.1rem;
+  padding: 24px;                 /* ← breathing room inside */
+  margin: 16px 0;  
+  font-family: "Roboto"; 
+}
+
+.card-text ul {
+  margin-bottom: 16px;
+  padding-left: 24px;
+  line-height: 1.8;
+  font-family: "Roboto";
+  font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 }
 
 .btn {
@@ -42,10 +66,12 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 112px;
+    margin-top: 16px;
 }
+
 div.card {
     border: none;
-    background-color: transparent;
+     background-color: rgb(143, 140, 140);
 }
 
 div.card-body, .card-title, .card-text {
@@ -61,7 +87,7 @@ div.card-body, .card-title, .card-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255);
+    color: rgb(212, 40, 109);
 }
 
 
@@ -80,10 +106,14 @@ div.card-body, .card-title, .card-text {
     height: 700px;
     object-fit: cover;
     border-radius: 0;
+    font-family: "Roboto";
+    color: rgb(212, 40, 109);
 }
 
 h2 {
-    font-weight: 700;
+    font-weight: 1000;
+    font-family: "Roboto";
+    color: rgb(212, 40, 109);
 }
 
 .modal-body img {
