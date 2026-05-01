@@ -12,6 +12,99 @@ nav a {
 }
 
 
+
+/* Outer container - hides the overflow */
+.scroll-carousel {
+  width: max-content%;
+  overflow-x: auto;         /* ← allows horizontal scrolling */
+  overflow-y: hidden;
+  padding: 0px;
+}
+
+/* Hides the scrollbar so it looks clean */
+.scroll-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* The inner track that holds all cards in a row */
+.scroll-track {
+  display: flex;            /* ← puts cards side by side */
+  gap: 24px;               /* ← space between cards */
+  padding: 0px;
+  width: max-content;       /* ← lets it grow as wide as needed */
+}
+
+/* Each individual card */
+.scroll-card {
+  width: max-content;             /* ← change this to make cards bigger/smaller */
+  flex-shrink: 0;           /* ← stops cards from squishing */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.scroll-card img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+}
+
+.scroll-card p {
+  padding: 0px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: #3a0010;
+}
+
+.scroll-carousel {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 40px 0;
+  cursor: grab;
+}
+
+.scroll-carousel::-webkit-scrollbar {
+  display: none;        /* ← hides scrollbar for clean look */
+}
+
+.scroll-track {
+  display: flex;
+  gap: 24px;
+  padding: 0 40px;
+  width: max-content;
+}
+
+.scroll-card {
+  width: 500px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.scroll-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+  display: block;
+}
+
+.scroll-card-body {
+  padding: 20px;
+}
+
+.scroll-card-body h5 {
+  font-family: "Playfair Display", serif;
+  color: #3a0010;
+  margin-bottom: 12px;
+}
+
+
+
+
+
+
+
 nav a:hover {
   background-color: rgb(212, 40, 109);
   transform: translateX(4px); /* ← subtle slide on hover */
@@ -32,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-inner img {
     width: 100%;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: contain;
     
 }
 
@@ -71,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 
 div.card {
     border: none;
-     background-color: rgb(143, 140, 140);
+  
 }
 
 div.card-body, .card-title, .card-text {
@@ -104,7 +197,7 @@ div.card-body, .card-title, .card-text {
 
 .work-card img {
     height: 700px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0;
     font-family: "Roboto";
     color: rgb(212, 40, 109);
@@ -118,4 +211,38 @@ h2 {
 
 .modal-body img {
     width: 100%;
+}
+
+.footer {
+  background-color: rgb(212, 40, 109);
+  color: #fff;
+  border-top: 1px solid #333;
+  font-size: 50px;
+}
+
+.footer-link {
+  color: #0a0a0a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+
+/* added for clean-up */
+.section-text {
+  max-width: 800px;
+  margin: 40px auto 0;   /* ← centers the text and adds space above */
+  line-height: 1.8;
+}
+
+.section-text p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.section-text .btn {
+  margin-top: 0px;
 }
