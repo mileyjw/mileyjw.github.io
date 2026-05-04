@@ -1,7 +1,7 @@
 nav a {
   display: block;
   background-color: rgb(212, 40, 109);
-  color: #3a0010;
+  color: #ffffff;
   text-decoration: none;
   font-size: 2rem;
   padding: 20px 20px;
@@ -9,6 +9,7 @@ nav a {
   border: 2px solid #a61f87;
   transition: background 0.2s, transform 0.15s;
   text-align: center;
+  font-family: "Paradiso";
 }
 
 
@@ -53,7 +54,7 @@ nav a {
   padding: 0px;
   font-family: "Playfair Display", serif;
   font-size: 1.1rem;
-  color: #3a0010;
+  color: #ffffff;
 }
 
 .scroll-carousel {
@@ -95,7 +96,7 @@ nav a {
 
 .scroll-card-body h5 {
   font-family: "Playfair Display", serif;
-  color: #3a0010;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -162,6 +163,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 16px;
 }
 
+.btn:hover {
+    background-color: rgb(212, 40, 109);
+    color: white;
+    cursor: pointer; 
+}
+
 div.card {
     border: none;
   
@@ -173,14 +180,20 @@ div.card-body, .card-title, .card-text {
 
 /* Hero Section */
 .hero-section {
-    background: url(../images/bacground.webp);
     background-size: cover;
     background-position: 50% 50%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(212, 40, 109);
+    color: rgb(212, 40, 10);
+    background: url(../images/susan-wilkinson-9cvEdIMo5lk-unsplash.jpg);
+    background-attachment: fixed;
+}
+
+body { 
+    background-color: #fff;
+    background-attachment: fixed;
 }
 
 
@@ -191,8 +204,14 @@ div.card-body, .card-title, .card-text {
     color: rgb(212, 40, 109);
 }
 
-.hero-section .lead {
+.hero-section .lead { 
     font-size: 1.5rem;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+    background-color: #060606;
 }
 
 .work-card img {
@@ -245,4 +264,8 @@ h2 {
 
 .section-text .btn {
   margin-top: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
