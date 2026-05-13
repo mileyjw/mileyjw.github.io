@@ -6,7 +6,7 @@ nav a {
   font-size: 2rem;
   padding: 20px 20px;
   border-radius: 50px;        /* ← this makes the pill shape */
-  border: 2px solid #a61f87;
+  border: 2px solid rgb(212, 40, 109)7;
   transition: background 0.2s, transform 0.15s;
   text-align: center;
   font-family: "Bodoni Moda", serif;
@@ -22,10 +22,6 @@ nav a {
   padding: 0px;
 }
 
-/* Hides the scrollbar so it looks clean */
-.scroll-carousel::-webkit-scrollbar {
-  display: none;
-}
 
 /* The inner track that holds all cards in a row */
 .scroll-track {
@@ -54,7 +50,7 @@ nav a {
   padding: 0px;
   font-family: "Playfair Display", serif;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #252121;
 }
 
 .scroll-carousel {
@@ -101,6 +97,21 @@ nav a {
 }
 
 
+.scroll-card-overlay {
+  position: relative;
+  inset: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-card:hover .scroll-card-overlay {
+  opacity: 1;
+}
 
 
 
@@ -192,7 +203,7 @@ div.card-body, .card-title, .card-text {
 }
 
 body { 
-    background-color: #fff;
+    background: url(../images/susan-wilkinson-9cvEdIMo5lk-unsplash.jpg);
     background-attachment: fixed;
 }
 
