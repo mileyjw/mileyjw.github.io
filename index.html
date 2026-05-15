@@ -388,35 +388,6 @@
   </div>
 </footer>
 
-<script>
-  const carousel = document.querySelector('.scroll-carousel');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  // When you click down
-  carousel.addEventListener('mousedown', (e) => {
-    isDown = true;
-    carousel.style.cursor = 'grabbing';
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-  });
-
-  // When you release
-  carousel.addEventListener('mouseup', () => {
-    isDown = false;
-    carousel.style.cursor = 'grab';
-  });
-
-  // When you drag
-  carousel.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 2;   // ← higher number = faster scroll
-    carousel.scrollLeft = scrollLeft - walk;
-  });
-</script>
 
 
 	</body>
