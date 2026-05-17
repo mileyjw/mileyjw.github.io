@@ -235,3 +235,17 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+
+    .scroll-card {
+        width: 300px;
+    }
+
+    .scroll-card img {
+        height: 250px;
+    }
+}
