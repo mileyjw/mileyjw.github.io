@@ -6,7 +6,6 @@ nav a {
   font-size: 2rem;
   padding: 20px 20px;
   border-radius: 50px;        /* ← this makes the pill shape */
-  border: 2px solid rgb(212, 40, 109)7;
   transition: background 0.2s, transform 0.15s;
   text-align: center;
   font-family: "Bodoni Moda", serif;
@@ -90,7 +89,7 @@ nav a {
 }
 
 .scroll-card img:hover {
-  opacity: 0.6;
+  opacity: 0.2;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -119,8 +118,8 @@ nav a {
 
 nav a:hover {
   background-color: rgb(212, 40, 109);
-  transform: translateX(4px); /* ← subtle slide on hover */
-  padding: 20px 40px;
+transform: translateX(4px);
+
 
 }
 
@@ -134,32 +133,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100px;
 }
 
-.carousel-inner img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    
-}
-
-.card-text p {
-  margin-bottom: 16px;      /* ← space between paragraphs */
-  line-height: 1.8;         /* ← makes text easier to read */
-  font-size: 1.1rem;
-  padding: 24px;                 /* ← breathing room inside */
-  margin: 16px 0;  
-  font-family: "Roboto"; 
-}
-
-.card-text ul {
-  margin-bottom: 16px;
-  padding-left: 24px;
-  line-height: 1.8;
-  font-family: "Roboto";
-  font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    
-}
 
 .btn {
     background: rgb(212, 40, 109);;
@@ -177,15 +150,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn:hover {
     background-color: rgb(212, 40, 109);
     color: white;
-}
-
-div.card {
-    border: none;
-  
-}
-
-div.card-body, .card-title, .card-text {
-    color: var(--text-color);
 }
 
 /* Hero Section */
@@ -221,15 +185,7 @@ body {
     border: 2px solid #000000;
     transition: background 0.2s, transform 0.15s;
     display: inline-block;
-    background-color: #060606;
-}
-
-.work-card img {
-    height: 700px;
-    object-fit: contain;
-    border-radius: 0;
-    font-family: "Roboto";
-    color: rgb(212, 40, 109);
+    background-color: #fff3f3;
 }
 
 h2 {
@@ -246,7 +202,7 @@ h2 {
   background-color: rgb(212, 40, 109);
   color: #fff;
   border-top: 1px solid #333;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .footer-link {
@@ -278,68 +234,4 @@ h2 {
 
 html {
     scroll-behavior: smooth;
-}
-
-
-
-
-
-
-/* Hover + Lightbox */
-.photo-wrap {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-.photo-wrap img {
-  transition: transform 0.4s ease;
-  display: block;
-  width: 100%;
-}
-.photo-wrap .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-family: inherit;
-}
-.photo-wrap:hover .overlay { opacity: 1; }
-.photo-wrap:hover img { transform: scale(1.06); }
-.overlay-label {
-  color: #fff;
-  font-size: 13px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* Lightbox */
-#mw-lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.88);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
-}
-#mw-lightbox.open { display: flex; }
-#mw-lightbox img {
-  max-width: 90vw;
-  max-height: 88vh;
-  object-fit: contain;
-  border-radius: 6px;
-}
-#mw-lightbox-close {
-  position: fixed;
-  top: 20px; right: 24px;
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  line-height: 1;
 }
