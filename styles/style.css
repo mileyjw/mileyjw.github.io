@@ -1,7 +1,7 @@
 nav a {
   display: block;
   background-color: rgb(212, 40, 109);
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
   font-size: 2rem;
   padding: 20px 20px;
@@ -9,6 +9,7 @@ nav a {
   transition: background 0.2s, transform 0.15s;
   text-align: center;
   font-family: "Bodoni Moda", serif;
+  
 }
 
 /*practice*/
@@ -33,7 +34,6 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
   font-family: "Roboto";
   font-size: 25px;
   letter-spacing: 1px;
@@ -117,7 +117,7 @@ nav a {
 
 
 nav a:hover {
-  background-color: rgb(212, 40, 109);
+  background-color: rgb(198, 107, 10);
 transform: translateX(4px);
 
 
@@ -125,7 +125,6 @@ transform: translateX(4px);
 
 
 h1, h2, h3, h4, h5, h6 {
-    color:rgb(0, 0, 0);
     font-family:  "Roboto";
 }
 
@@ -137,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     background: rgb(212, 40, 109);;
     border: none;
-    color: var(--green-highlight);
+    color: white;
     font-family: "Roboto";
     font-weight: 900;
     font-size: 12px;
@@ -148,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover {
-    background-color: rgb(212, 40, 109);
+    background-color: rgb(210, 130, 50);
     color: white;
 }
 
@@ -163,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(212, 40, 10);
     background: url(../images/susan-wilkinson-9cvEdIMo5lk-unsplash.jpg);
     background-attachment: fixed;
+    margin-top: -200px;
 }
 
 body { 
