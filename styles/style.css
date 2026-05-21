@@ -23,6 +23,10 @@ nav a {
 
 /*practice*/
 
+.scroll-card:not(.no-view):hover::after {
+  opacity: 1;
+}
+
 .scroll-card {
   position: relative;
 }
@@ -51,9 +55,6 @@ nav a {
   pointer-events: none;
 }
 
-.scroll-card:hover::after {
-  opacity: 1;
-}
 
 /*practice*/
 
